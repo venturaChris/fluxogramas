@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="chris"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-28 10:20:31 "/>
+        <attribute name="created" value="Y2hyaXM7REVTS1RPUC00OE9DTjk2OzIwMjItMDMtMjg7IjA5OjA3OjI3ICI7Mjc2Mg=="/>
+        <attribute name="edited" value="Y2hyaXM7REVTS1RPUC00OE9DTjk2OzIwMjItMDMtMjg7IjEwOjIwOjMxICI7MjsyODUz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="RESULTADO" type="String" array="False" size=""/>
+            <output expression="&quot;QUAL A CAPITAL DO BRASIL:&#13;&#10;A-LONDRES, B-BRASILIA, C-BAHIA ?&quot;" newline="True"/>
+            <input variable="RESULTADO"/>
+            <if expression="RESULTADO == &quot;B&quot;">
+                <then>
+                    <output expression="&quot;PARABENS, VOCE ACERTOU!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;VOCE ERROU&quot;" newline="True"/>
+                    <output expression="&quot;TENTE OUTRA&quot;" newline="True"/>
+                    <output expression="&quot;QUAL A COR DO CAVALO BRANCO DE NAPOLEAO:&#13;&#10;A-PRETO, B-MARRON, C-BRANCO ?&quot;" newline="True"/>
+                    <input variable="RESULTADO"/>
+                    <if expression="RESULTADO == &quot;C&quot;">
+                        <then>
+                            <output expression="&quot;VOCE ACERTOU!&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;VOCE ERROU&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

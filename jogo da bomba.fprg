@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="chris"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-29 01:03:53 "/>
+        <attribute name="created" value="Y2hyaXM7REVTS1RPUC00OE9DTjk2OzIwMjItMDMtMjk7IjEyOjIzOjQ5ICI7Mjc1OQ=="/>
+        <attribute name="edited" value="Y2hyaXM7REVTS1RPUC00OE9DTjk2OzIwMjItMDMtMjk7IjAxOjAzOjUzICI7MTsyODU4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="missao, tempo" type="Integer" array="False" size=""/>
+            <output expression="&quot;voce &#233; um agente e sua missao &#233; explodir a base inimiga e conseguir fugir, voce tem que escolher quantos segundos a bomba vai ter para que de para vc fugir do alcance dela e nao pode demorar muito para que os guardas nao a desarmem!&quot;" newline="True"/>
+            <output expression="&quot;aceitar missao?&#13;&#10;1-sim &#13;&#10;2-nao&quot;" newline="True"/>
+            <input variable="missao"/>
+            <if expression="missao == 1">
+                <then>
+                    <output expression="&quot;escolha quantos segundos&quot;" newline="True"/>
+                    <input variable="tempo"/>
+                    <if expression="tempo &lt;=30">
+                        <then>
+                            <output expression="&quot;nao deu tempo a bomba explodiu voce&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="tempo &gt;= 60">
+                                <then>
+                                    <output expression="&quot;demorou muito, te pegaram&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;voce conseguiu completar a missao&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;voce &#233; um covarde, e nao sera mais um agente!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

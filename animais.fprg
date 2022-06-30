@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="chris"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-04-01 01:10:38 "/>
+        <attribute name="created" value="Y2hyaXM7REVTS1RPUC00OE9DTjk2OzIwMjItMDQtMDE7IjEyOjU1OjIxICI7Mjc0NQ=="/>
+        <attribute name="edited" value="Y2hyaXM7REVTS1RPUC00OE9DTjk2OzIwMjItMDQtMDE7IjAxOjEwOjM4ICI7MTsyODUw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="String" array="False" size=""/>
+            <output expression="" newline="True"/>
+            <input variable=""/>
+            <if expression="">
+                <then>
+                    <output expression="" newline="True"/>
+                    <input variable=""/>
+                    <if expression="">
+                        <then>
+                            <output expression="" newline="True"/>
+                            <input variable=""/>
+                            <if expression="">
+                                <then>
+                                    <output expression="determinacao" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="" newline="True"/>
+                            <input variable=""/>
+                            <if expression="">
+                                <then/>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="" newline="True"/>
+                    <input variable=""/>
+                    <if expression="">
+                        <then>
+                            <output expression="" newline="True"/>
+                            <input variable=""/>
+                            <if expression="">
+                                <then/>
+                                <else/>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="" newline="True"/>
+                            <input variable=""/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <input variable=""/>
+        </body>
+    </function>
+</flowgorithm>
